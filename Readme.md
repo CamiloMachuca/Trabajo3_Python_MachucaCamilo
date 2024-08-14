@@ -18,10 +18,13 @@
 -Archivo [imagenes]: esta contiene las imágenes utilizadas en el Readme.
 ## Instrucciones de uso
 1. Debes tener instalada la aplicación de visual studio code.
+
 ![alt text](<imagenes/Captura de pantalla 2024-08-05 115720.png>)
+
 2. Debes tener la extensión de python instalada en visual studio code.
 
 ![alt text](<imagenes/Captura de pantalla 2024-08-05 115358.png>)
+
 3. Debes tener instalada la aplicación de git bash.
 
 ![alt text](<imagenes/Captura de pantalla 2024-08-05 120027.png>)
@@ -32,8 +35,12 @@
 git clone https://github.com/CamiloMachuca/Trabajo3_Python_MachucaCamilo.git
 
 5. Abrir el repositorio en visual studio code.
+
 ![alt text](<imagenes/Captura de pantalla 2024-08-13 212453.png>)
+
 6. Ejecutar el programa en la opción de visual studio code.
+
 ![alt text](<imagenes/Captura de pantalla 2024-08-05 120554.png>)
+
 ## Desarrollado por:
 El proyecto fue desarrollado por Camilo Machuca Vega como proyecto python.
