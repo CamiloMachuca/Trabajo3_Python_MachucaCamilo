@@ -29,8 +29,8 @@ while buliano==True:
     print("##########################")
     print("#### Menu principal ####")# se realizo el menu principal con sus respectivas opciones
     print("##########################")
-    print("(1) Realizar un pedido")
-    print("(2) Realizar consulta")
+    print("(1) Ingresar al menu de pedidos")
+    print("(2) Ingresar al menu de consultas")
     print("(3) Salir del programa")
     opcion=int(input("Ingrese la opcion deseada: "))
     if opcion==1:
@@ -38,20 +38,22 @@ while buliano==True:
         while bucle==True:
 
             print()
-            print("####### Menu de opciones ######")# menu para la realización de pedidos
+            print("####### Menu de Pedidos ######")# menu para la realización de pedidos
             print("(1) Realizar un pedido")
-            print("(2) Revisar el menu ")
-            print("(3) salir del programa")
+            print("(2) Revisar el menu de productos ")
+            print("(3) modificar un pedido")
+            print("(4) salir del programa")
             print()
             opci=int(input("ingrese la opcion deseada: "))
             if opci==1:
                 print("Ingrse los siguientes datos para realizar el pedido: ")
                 cliente=input("Ingrese el nombre del cliente: ")
                 buclee=True
+                items=[]
                 while buclee==True:# se crea un bucle while para guardar los items que el usuario requiera
 
                     nombre=input("Ingrese el nombre: ")
-                    items=[]
+                    
                     for i in listaMenu:
                         if nombre==i["nombre"]:
                             categoria=i["categoria"]
@@ -73,8 +75,23 @@ while buliano==True:
                     print("nombre: ", i["nombre"])
                     print("precio: ", i["precio"])
                     print()
-            
-            elif opci==3:
+            elif opcio==3:
+                print("Ingrese el nombre del cliente que desea modificar el pedido:")
+                nombreCliente=input()
+                for i in listaPedidos:
+                    if nombreCliente==i["cliente"]:
+                        cliente=nombreCliente
+                        estado=input("Ingrese el nuevo estado del pedido: ")
+                        for i in i["items"]:
+                            categoria=input("Ingrese la nueva categoria: ")
+                            nombre=input("Ingrese el nuevo producto: ")
+                            for i in listaMenu:
+                                if nombre==i["nombre"]:
+                                    precio=i["precio"]
+                guardarPedido(listaPedidos)
+
+
+            elif opci==4:
                 bucle=False
 
     elif opcion==2:
@@ -88,7 +105,7 @@ while buliano==True:
             print("(2) mostrar un pedido particular")
             print("(3) salir al menu principal")
             opcio=int(input("Ingresa la opcion deseada: "))
-            if opcio==1:
+            if opcio==1:  
                 print("Los pedidos realizados son: ")# se muestran todos los pedidos que hay hasta la fecha 
                 for i in listaPedidos:
                     print()
@@ -116,8 +133,8 @@ while buliano==True:
                             print(f"precio: {i["precio"]}")
                             print()
                             break
-                            
-                    
+
+
 
             else:
                 bulianito=False
