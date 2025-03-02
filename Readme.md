@@ -11,11 +11,11 @@
  ## Estructura del proyecto
 ![alt text](<imagenes/Captura de pantalla 2024-08-13 212536.png>)
  ## Características
- -Archivo [Python.py]: Este contiene el código principal.
--Archivo [Menu.json]: Este permite guardar los productos registrados.
--Archivo [Pagos.json]: Este permite guardar los datos de los pedidos pagados.
--Archivo [Pedidos.json]: Este permite guardar los datos de los Pedidos.
--Archivo [imagenes]: esta contiene las imágenes utilizadas en el Readme.
+- Archivo [Python.py]: Este contiene el código principal.
+- Archivo [Menu.json]: Este permite guardar los productos registrados.
+- Archivo [Pagos.json]: Este permite guardar los datos de los pedidos pagados.
+- Archivo [Pedidos.json]: Este permite guardar los datos de los Pedidos.
+- Archivo [imagenes]: esta contiene las imágenes utilizadas en el Readme.
 ## Instrucciones de uso
 1. Debes tener instalada la aplicación de visual studio code.
 
